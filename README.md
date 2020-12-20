@@ -5,3 +5,5 @@ number of cars.
 this algorithm first convert the image/video file into a black and white frame for visual computing and detection and then returns to us coloured version of the file with red rectangles
 around the cars detected. 
 you can use tracker_img.py file for images and tracker.py for videos
+
+This model has a working accuracy of 60-70%
