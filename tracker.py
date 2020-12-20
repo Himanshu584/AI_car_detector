@@ -39,7 +39,8 @@ while True:
 
     #display video
     cv2.imshow('Galvic Car Detector', frame)
-    
+
+    # close if space-bar is pressed
     if keyboard.is_pressed(" "):
         break
     else:
