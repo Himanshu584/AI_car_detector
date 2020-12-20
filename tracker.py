@@ -21,7 +21,7 @@ car_tracker = cv2.CascadeClassifier(car_classifier_file)
 while True:
     # read current frame
     (read_successful, frame) = video.read()
-
+    # only if read was successful, convert the frame to grayscale.
     if read_successful:
         grayscaled_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     else:
@@ -30,7 +30,7 @@ while True:
     # detect cars 
     cars = car_tracker.detectMultiScale(grayscaled_frame)
 
-    #print(cars)    #--> uncomment to see matrix values of cars detected
+    #print(cars)    #--> uncomment to see list of coordinates of cars detected
 
     # draw rectangles around cars
     for (x,y,w,h) in cars:
@@ -40,10 +40,11 @@ while True:
     cv2.imshow('Galvic Car Detector', frame)
 
 
-# prevent autoclose untill key is pressed 
+# prevent autoclose untill key is pressed and read over the frame after every 1 millisecond
 cv2.waitKey(1)
 
+# Destroy / close all windows after the loop ends.
 cv2.destroyAllWindows()
 
-
+# Code ran without errors
 print('code completed!')
