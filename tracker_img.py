@@ -31,5 +31,5 @@ cv2.imshow('Galvic Car Detector', img)
 cv2.waitKey()
 
 cv2.destroyAllWindows()
-
+# code ran without errors
 print('code completed!')
