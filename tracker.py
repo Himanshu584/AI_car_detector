@@ -1,10 +1,6 @@
 import cv2
-import numpy as np
 import keyboard
 
-# #cars image
-# user_input = input("please enter image file:\n >>>" )
-# img_file = user_input
 
 #Video file
 video_file = input("please enter Video file:\n >>>")
