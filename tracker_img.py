@@ -1,6 +1,4 @@
 import cv2
-import numpy as np
-
 
 #cars image
 user_input = input("please enter image file:\n >>>" )
